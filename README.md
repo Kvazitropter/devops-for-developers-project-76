@@ -15,8 +15,12 @@ sudo apt install ansible -y
 ```bash
 git clone git@github.com:Kvazitropter/devops-for-developers-project-76.git
 ```
-3. Добавьте ssh ключи в папку .ssh вашего пользователя
-4. Запустите установку pip и Docker на сервере:
+3. Укажите данные для ваших серверов в group_vars и host_vars
+4. Запустите установку pip и Docker:
 ```bash
 make setup
+```
+5. Запустите установку приложения Redmine:
+```bash
+make deploy
 ```
