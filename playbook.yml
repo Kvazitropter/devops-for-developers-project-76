@@ -15,4 +15,4 @@
     - geerlingguy.pip
     - geerlingguy.docker
     - role: datadog.dd.agent
-      when: inventory_hostname in groups['webservers']
+      when: inventory_hostname in groups.get('webservers', [])
