@@ -1,5 +1,5 @@
 - name: Setup for Docker deployment
-  hosts: webservers
+  hosts: all
   become: yes
 
   vars:
@@ -9,4 +9,5 @@
   roles:
     - geerlingguy.pip
     - geerlingguy.docker
-    - datadog.dd.agent
+    - role: datadog.dd.agent
+      when: inventory_hostname in groups['webservers']
