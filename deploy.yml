@@ -1,6 +1,6 @@
 - name: Deploy Redmine app
   hosts: all
-  become: yes
+  become: true
 
   tasks:
     - name: Create directory for .env

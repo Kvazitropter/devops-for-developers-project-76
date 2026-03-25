@@ -1,6 +1,6 @@
 - name: Setup for Docker deployment
   hosts: all
-  become: yes
+  become: true
 
   vars:
     pip_install_packages:
