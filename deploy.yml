@@ -1,10 +1,6 @@
 - name: Deploy Redmine app
   hosts: all
   become: yes
-  vars:
-    container_name: 'redmine'
-    image: 'redmine:latest'
-    env_file_path: '/opt/redmine/.env'
 
   tasks:
     - name: Create directory for .env

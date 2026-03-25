@@ -2,7 +2,7 @@
 =
 [![Actions Status](https://github.com/Kvazitropter/devops-for-developers-project-76/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kvazitropter/devops-for-developers-project-76/actions)
 ---
-> Веб-сервис, который включает в себя два сервера, базу данных и балансировщик нагрузки, развернутые на облачном хостинге. Проект демонстрирует навыки работы с инструментами автоматизации, такими как Ansible и Docker. [Перейти](http://kvazitropter.ru/)
+> Веб-сервис, который включает в себя два сервера, базу данных и балансировщик нагрузки, развернутые на облачном хостинге. Проект демонстрирует навыки работы с инструментами автоматизации, такими как Ansible и Docker. [Перейти](https://kvazitropter.ru/)
 ---
 Установка
 ==
@@ -15,12 +15,24 @@ sudo apt install ansible -y
 ```bash
 git clone git@github.com:Kvazitropter/devops-for-developers-project-76.git
 ```
-3. Укажите данные для ваших серверов в group_vars и host_vars
-4. Запустите установку pip и Docker:
+3. Укажите данные для ваших серверов в group_vars/webservers/vars.yml и host_vars
+4. Зашифруйте значение пароля от базы данных db_password и redmine_secret_key в group_vars/webservers/vault.yml
+5. Запустите установку pip и Docker:
 ```bash
 make setup
 ```
-5. Запустите установку приложения Redmine:
+6. Запустите установку приложения Redmine:
 ```bash
 make deploy
+```
+---
+Дополнительные команды:
+-
+Команда для просмотра group_vars/webservers/vault.yml:
+```bash
+make vault-view
+```
+Команда для редактирования group_vars/webservers/vault.yml:
+```bash
+make vault-edit
 ```

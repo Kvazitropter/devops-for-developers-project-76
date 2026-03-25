@@ -1,0 +1,14 @@
+# ansible
+ansible_user: kvazi
+
+# redmine
+redmine_port: 4747
+container_name: 'redmine'
+image: 'redmine:latest'
+env_file_path: '/opt/redmine/.env'
+
+# база данных
+db_host: rc1b-h60tek6d4mehpauu.mdb.yandexcloud.net,rc1d-nkn2tck1ermce5t7.mdb.yandexcloud.net
+db_port: 6432
+db_name: db1
+db_user: kvazi
