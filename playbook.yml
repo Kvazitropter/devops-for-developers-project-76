@@ -1,5 +1,5 @@
 - name: Setup for Docker deployment
-  hosts: all
+  hosts: webservers
   become: yes
 
   vars:
