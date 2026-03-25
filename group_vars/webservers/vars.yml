@@ -12,3 +12,13 @@ db_host: rc1b-h60tek6d4mehpauu.mdb.yandexcloud.net,rc1d-nkn2tck1ermce5t7.mdb.yan
 db_port: 6432
 db_name: db1
 db_user: kvazi
+
+# datadog
+datadog_site: datadoghq.eu
+datadog_checks:
+  http_check:
+    init_config: {}
+    instances:
+      - name: "Redmine kvazitropter.ru"
+        url: "https://localhost:{{ redmine_port }}"
+        method: GET

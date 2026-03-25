@@ -1,5 +1,5 @@
 - name: Deploy Redmine app
-  hosts: all
+  hosts: webservers
   become: yes
 
   tasks:

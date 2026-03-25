@@ -16,7 +16,12 @@ sudo apt install ansible -y
 git clone git@github.com:Kvazitropter/devops-for-developers-project-76.git
 ```
 3. Укажите данные для ваших серверов в group_vars/webservers/vars.yml и host_vars
-4. Зашифруйте значение пароля от базы данных db_password и redmine_secret_key в group_vars/webservers/vault.yml
+4. Создайте group_vars/webservers/vault.yml и зашифруйте значения:
+```yml
+db_password: 'password'
+redmine_secret_key: 'secret_key'
+datadog_api_key: 'api_key'
+```
 5. Запустите установку pip и Docker:
 ```bash
 make setup
