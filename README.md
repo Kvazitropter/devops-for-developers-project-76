@@ -2,7 +2,7 @@
 =
 [![Actions Status](https://github.com/Kvazitropter/devops-for-developers-project-76/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kvazitropter/devops-for-developers-project-76/actions)
 ---
-> Веб-сервис, который включает в себя два сервера, базу данных и балансировщик нагрузки, развернутые на облачном хостинге. Проект демонстрирует навыки работы с инструментами автоматизации, такими как Ansible и Docker. [Перейти](https://kvazitropter.ru/)
+> Веб-сервис, который включает в себя два сервера, базу данных и балансировщик нагрузки, развернутые на облачном хостинге. Проект демонстрирует навыки работы с инструментами автоматизации, такими как Ansible и Docker. [Ссылка на видео, демонстрирующее рабочий https://kvazitropter.ru/](https://drive.google.com/file/d/1h17VA6qI539DahnbMV_MuQiq6m7Zruu-/view?usp=sharing)
 ---
 Установка
 ==
